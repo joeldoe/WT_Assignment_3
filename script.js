@@ -37,14 +37,13 @@ $(document).ready(function()
 				
 						if(option.price_small == null)
 						{
-							$("#min-price").html("<b>Minimum price:</b> 0");
+							$("#max-price").html("<b>Price (large):</b> " + option.price_large);
 						}
 						else
 						{
-							$("#min-price").html("<b>Minimum price:</b> " + option.price_small);
+							$("#min-price").html("<b>Price (small):</b> " + option.price_small);
+							$("#max-price").html("<b>Price (large):</b> " + option.price_large);
 						}
-				
-						$("#max-price").html("<b>Maximum price:</b> " + option.price_large);
 					}
 				}
 			});
